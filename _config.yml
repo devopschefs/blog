@@ -92,7 +92,7 @@ analytics:
 
 
 # Site Author - Alex Giannotti
-author:
+author_alex:
   name             : "Alex Giannotti"
   avatar           : "/assets/images/alex_3x4.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "DevOps advocate."
@@ -100,11 +100,11 @@ author:
   email            :
   links:
     #- label: "Email"
-      #icon: "fas fa-fw fa-envelope-square"
-      #url: "mailto:your.name@email.com"
+    #   icon: "fas fa-fw fa-envelope-square"
+    #   url: "mailto:your.name@email.com"
     #- label: "Website"
-      #icon: "fas fa-fw fa-link"
-      #url: "https://your-website.com"
+    #   icon: "fas fa-fw fa-link"
+    #   url: "https://your-website.com"
     # - label: "Twitter"
     #   icon: "fab fa-fw fa-twitter-square"
     #   url: "https://twitter.com/"
@@ -115,8 +115,35 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/alexgwasp2"
     #- label: "Instagram"
-      #icon: "fab fa-fw fa-instagram"
-      #url: "https://instagram.com/"
+    #  icon: "fab fa-fw fa-instagram"
+    #  url: "https://instagram.com/"
+
+# Site Author - Max Fernandes
+author_max:
+  name             : "Max Fernandes"
+  avatar           : "/assets/images/chef-hat.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "DevOps advocate."
+  location         : "BR"
+  email            :
+  links:
+    #- label: "Email"
+    #   icon: "fas fa-fw fa-envelope-square"
+    #   url: "mailto:your.name@email.com"
+    #- label: "Website"
+    #   icon: "fas fa-fw fa-link"
+    #   url: "https://your-website.com"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://twitter.com/"
+    # - label: "Facebook"
+    #   icon: "fab fa-fw fa-facebook-square"
+    #   url: "https://facebook.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/mistermaf"
+    #- label: "Instagram"
+    #  icon: "fab fa-fw fa-instagram"
+    #  url: "https://instagram.com/"
 
 
 # Site Footer
