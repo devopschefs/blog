@@ -106,7 +106,7 @@ tagline: "Humanity is overrated."
 
 ## ARCHIVE PAGES
 
-### You can display a list of all the posts corresponding to a particular category on a standalone page using the `ARCHIVE` layout.
+**You can display a list of all the posts corresponding to a particular category on a standalone page using the `ARCHIVE` layout**
 
 - Create a .md file in the root directory.
 - Name the file. Preferred name will be the name of the category.
