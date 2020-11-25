@@ -79,14 +79,17 @@ categories: ["life", friends]
 ## CREATE PAGES
 
 - Create a `<example>.md` file in the `/docs/_pages` directory.
-- Write the *Front Matter* and content in the file:
+- Write the *Front Matter* and content in the file, following the example:
 
 ```markdown
 ---
 permalink: /comment-policy/
 title: Comment Policy
-excerpt: "Comment policy."
+#excerpt: "Comment policy."
 last_modified_at: 2020-11-24
+header:
+  overlay_image: "/assets/images/guidelines.jpg"
+  overlay_filter: 0.50
 ---
 
 ```
