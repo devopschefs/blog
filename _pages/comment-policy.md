@@ -1,8 +1,11 @@
 ---
 permalink: /comment-policy/
 title: Comment Policy
-excerpt: "Comment policy."
+#excerpt: "Comment policy."
 last_modified_at: 2020-11-24
+header:
+  overlay_image: "/assets/images/guidelines.jpg"
+  overlay_filter: 0.50
 ---
 
 Welcome to our blog! We try our best to make sure that the discussions on our posts are troll, spam and abuse free but we’re not omnipresent. The comment section can be a great place for interaction with readers, writers and even for spawning stimulating conversation – it can be a great place for all of us! To ensure that you have a good time over here, please make sure to stick to the following guidelines:
