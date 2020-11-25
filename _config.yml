@@ -312,12 +312,16 @@ defaults:
       share: true
       related: true
       show_date: true
+      toc: true # Table of contents (https://mmistakes.github.io/minimal-mistakes/docs/layouts/#table-of-contents)
+      toc_icon: bookmark # Free icons (https://fontawesome.com/icons?d=gallery&s=solid&m=free)
   # _pages
   - scope:
       path: ""
       type: pages
     values:
       layout: single
+      sitemap: true
+      classes: wide
   # _collections
   - scope:
       path: ""
