@@ -24,7 +24,7 @@ description              : ""
 url                      : "https://devopschefs.github.io/blog/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "devopschefs/blog" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/food_serving.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "/assets/images/chef_hat.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/chef_hat.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default) # gives us permalinks on navigation
@@ -179,6 +179,7 @@ footer:
 include:
   - .htaccess
   - _pages
+  - _posts
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
