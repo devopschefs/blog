@@ -1,10 +1,10 @@
 ---
+permalink: /cloud/
 title: Cloud
 layout: collection
-permalink: /cloud/
 collection: cloud
 entries_layout: grid
-classes: wide
+classes: wide # To expand the main content to the right, filling the space of what is normally occupied by the table of contents
 ---
 
-Sample document listing for the collection `_cloud`.
+All topics related to clouds such as Microsoft Azure, Amazon Web Services (AWS) or Google Cloud Platform (GCP).

@@ -1,10 +1,10 @@
 ---
+permalink: /iac/
 title: IaC
 layout: collection
-permalink: /iac/
 collection: iac
 entries_layout: grid
-classes: wide
+classes: wide # To expand the main content to the right, filling the space of what is normally occupied by the table of contents
 ---
 
-Sample document listing for the collection `_iac`.
+All topics related to infrastructure as code (IaC).

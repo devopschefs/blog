@@ -7,9 +7,7 @@ header:
   overlay_filter: 0.5 # Can also be an RGB color
 show_overlay_excerpt: true
 categories:
-  - DevOps
-  - IaC
-  - Cloud
+  - cloud
 tags:
   - tags-example
 

@@ -290,6 +290,18 @@ tag_archive:
 #     category: /categories/:name/
 #     tag: /tags/:name/
 
+# Collections
+collections:
+  cloud:
+    output: true
+    permalink: /:collection/:path/
+  devops:
+    output: true
+    permalink: /:collection/:path/
+  iac:
+    output: true
+    permalink: /:collection/:path/
+
 
 # HTML Compression
 # - https://jch.penibelst.de/
@@ -325,15 +337,7 @@ defaults:
       read_time: true
       comments: false
       sitemap: true
-      classes: wide
-  # _collections
-  - scope:
-      path: ""
-      type: foo
-    values:
-      layout: collection
-      comments: false
-      entries_layout: grid
+      classes: wide # To expand the main content to the right, filling the space of what is normally occupied by the table of contents
   # _tags
   - scope:
       path: ""
@@ -345,4 +349,33 @@ defaults:
       path: ""
       type: category
     values:
+      comments: false
+      author_profile: false
+# COLLECTIONS
+  # _cloud
+  - scope:
+      path: ""
+      type: cloud
+    values:
+      layout: single
+      author_profile: false
+      share: true
+      comments: false
+  # _devops
+  - scope:
+      path: ""
+      type: devops
+    values:
+      layout: single
+      author_profile: false
+      share: true
+      comments: false
+  # _iac
+  - scope:
+      path: ""
+      type: iac
+    values:
+      layout: single
+      author_profile: false
+      share: true
       comments: false
