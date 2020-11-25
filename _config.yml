@@ -95,7 +95,7 @@ analytics:
 author_alex:
   name             : "Alex Giannotti"
   avatar           : "/assets/images/alex.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "DevOps advocate."
+  bio              : "Just a guy that likes to talk about tech."
   location         : "UK"
   email            :
   links:
