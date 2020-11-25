@@ -1,14 +1,23 @@
 ---
-title: "Edge Case: Nested and Mixed Lists"
+title: "Post Example"
+excerpt: "Excerpt post example."
+toc_label: TOC Label example # Table of contents label
+header:
+  overlay_image: "/assets/images/guidelines.jpg"
+  overlay_filter: 0.5 # Can also be an RGB color
+show_overlay_excerpt: true
 categories:
-  - Edge Case
+  - DevOps
+  - IaC
+  - Cloud
 tags:
-  - content
-  - css
-  - edge case
-  - lists
-  - markup
-permalink: /:categories/:title/
+  - tags-example
+
+# OPTIONALS
+# caption: "Photo credit: [**Unsplash**](https://unsplash.com)" # Header image credits
+# actions: # Use if you need to provide something for the reader to download
+# - label: "Download"
+#     url: "https://github.com"
 ---
 
 Nested and mixed lists are an interesting beast. It's a corner case to make sure that

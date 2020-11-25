@@ -48,29 +48,30 @@ If you need more help see the Jekyll page [here](https://jekyllrb.com/docs/).
 
 ## ADDING POSTS
 
-The theme by default ships with starter posts located in `_posts/`. Delete these posts and add your content to the `_posts`
-folder to see them being served up by Jekyll. [This](https://jekyllrb.com/docs/posts/) would be a good guide to getting started on writing posts using Jekyll. We've added a concise guide below:
-
 - Create a .markdown file inside `_posts` folder.
 - Name the file according to the format YY-MM-DD-[short name for your post].
-- `2016-03-30-i-love-design.markdown`
-- Write the *Front Matter* and content in the file.
-
-### FORMAT
+  - `2016-03-30-i-love-design.md`
+- Write the *Front Matter* and content in the file, following the example:
 
 ```markdown
 ---
-layout: post | default | page
-title: String POST TITLE
-date: Time Stamp
-categories: String | Array of Strings CATEGORY / CATEGORIES
----
+title: "Post Example"
+excerpt: "Excerpt post example."
+toc_label: TOC Label example # Table of contents label
+header:
+  overlay_image: "/assets/images/<image_name>"
+  overlay_filter: 0.5 # Can also be an RGB color
+show_overlay_excerpt: true
+categories:
+  - categories-example
+tags:
+  - tags-example
 
----
-layout: post
-title: "The One with the Blackout"
-date: 2016-03-30 19:45:31 +0530
-categories: ["life", friends]
+# OPTIONALS
+# caption: "Photo credit: [**Unsplash**](https://unsplash.com)" # Header image credits
+# actions: # Use if you need to provide something for the reader to download
+# - label: "Download"
+#     url: "https://github.com"
 ---
 ```
 
@@ -88,7 +89,7 @@ title: Comment Policy
 #excerpt: "Comment policy."
 last_modified_at: 2020-11-24
 header:
-  overlay_image: "/assets/images/guidelines.jpg"
+  overlay_image: "/assets/images/<image_name>"
   overlay_filter: 0.50
 ---
 
