@@ -78,29 +78,22 @@ categories: ["life", friends]
 
 ## CREATE PAGES
 
-- Create a .md file in the root directory.
-- Name the file with the desired page link name.
-  `about.md`
-  `design.md`
-- Write the *Front Matter* and content in the file.
-
-### FORMAT
+- Create a `<example>.md` file in the `/docs/_pages` directory.
+- Write the *Front Matter* and content in the file:
 
 ```markdown
 ---
-layout: page
-title: String TITLE OF THE WEBPAGE
-permalink: / String / PERMALINK FOR THE WEBPAGE
-tagline: String OPTIONAL GRAVITY FEATURE : TAGLINE FOR THE PAGE
+permalink: /comment-policy/
+title: Comment Policy
+excerpt: "Comment policy."
+last_modified_at: 2020-11-24
 ---
 
----
-layout: page
-title: "Science"
-permalink: /science/
-tagline: "Humanity is overrated."
----
 ```
+
+- Pages should always have (added as global settings in `_config.yml`):
+  - `sitemap: true` so they can be searched at the sitemap feature.
+  - `classes: wide` so they fill the whole page without a content sidebar.
 
 ***
 
