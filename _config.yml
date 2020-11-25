@@ -322,9 +322,23 @@ defaults:
       layout: single
       sitemap: true
       classes: wide
+      comments: false
   # _collections
   - scope:
       path: ""
       type: foo
     values:
-      layout: single
+      layout: collection
+      entries_layout: grid
+  # _tags
+  - scope:
+      path: ""
+      type: tag
+    values:
+      author_profile: true
+  # _categories
+  - scope:
+      path: ""
+      type: category
+    values:
+      comments: false
