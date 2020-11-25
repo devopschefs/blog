@@ -1,14 +1,14 @@
 # main links
 main:
-  - title: "DevOps"
-    url: https://devopschefs.github.io/blog/devops/
-  - title: "Cloud"
-    url: https://devopschefs.github.io/blog/cloud/
-  - title: "IaC"
-    url: https://devopschefs.github.io/blog/iac/
+  # - title: "Categories"
+  #   url: /categories/
+  # - title: "Tags"
+  #   url: /tags/
+  # - title: "Year"
+  #   url: /year-archive/
+  # - title: "Archive"
+  #   url: /archive/
   - title: "About"
-    url: https://devopschefs.github.io/blog/about/
-  #- title: "year-archive"
-  #  url: https://devopschefs.github.io/blog/year-archive/
-  #- title: "collection-archive"
-  #  url: https://devopschefs.github.io/blog/collection-archive/
+    url: /about/
+  - title: "Terms &amp; Policies"
+    url: /comment-policy/
