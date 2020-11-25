@@ -330,12 +330,13 @@ defaults:
     values:
       layout: collection
       entries_layout: grid
+      comments: false
   # _tags
   - scope:
       path: ""
       type: tag
     values:
-      author_profile: true
+      comments: false
   # _categories
   - scope:
       path: ""
