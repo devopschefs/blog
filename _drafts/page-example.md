@@ -1,6 +1,6 @@
 ---
-permalink: /comment-policy/
-title: Comment Policy
+permalink: /comment-policy/ # folder path
+title: Comment Policy # name on UI
 #excerpt: "Comment policy."
 last_modified_at: 2020-11-24
 header:

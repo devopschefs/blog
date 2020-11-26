@@ -1,6 +1,6 @@
 ---
-title: "Post Example"
-excerpt: "Excerpt post example." # ProTip: Remember to write unique excerpt descriptions for each post for improved SEO and archive listings.
+title: "Post Example" # name on UI
+excerpt: "Excerpt post example." # Unique excerpt descriptions for each post for improved SEO and archive listings.
 toc_label: TOC Label example # Table of contents label
 last_modified_at: 2020-11-24
 author: # Alex Giannotti | Max Fernandes
@@ -9,11 +9,13 @@ header:
   overlay_filter: 0.5 # Can also be an RGB color
 show_overlay_excerpt: true
 categories:
-  - DevOps
-  - IaC
-  - Cloud
+  - processos
+  - azure
+  - modelo
 tags:
-  - tags-example
+  - processos
+  - azure
+  - modelo
 
 # OPTIONALS
 # caption: "Photo credit: [**Unsplash**](https://unsplash.com)" # Header image credits
