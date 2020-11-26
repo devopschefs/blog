@@ -179,7 +179,6 @@ footer:
 include:
   - .htaccess
   - _pages
-  - _posts
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -204,6 +203,8 @@ exclude:
   - package-lock.json
   - Rakefile
   - README
+  - howtocontribute.md
+  - _drafts
   - tmp
 keep_files:
   - .git
