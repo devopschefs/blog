@@ -101,6 +101,17 @@ header:
 
 ***
 
+## ABOUT
+
+To create your contact badge from LinkedIn follow these steps:
+
+- From your profile, click on See contact info.
+- Click on the pencil to edit.
+- Click on the arrow next to your LinkedIn Profile URL.
+- Scroll and click on the create the public profile badge button.
+- Copy the code in step one and paste it in the HTML about page.
+- Choose a badge, copy that code and paste it below the first line of code.
+
 ## ARCHIVE PAGES
 
 **You can display a list of all the posts corresponding to a particular category on a standalone page using the `ARCHIVE` layout**

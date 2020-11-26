@@ -3,6 +3,7 @@ title: "Post Example"
 excerpt: "Excerpt post example."
 toc_label: TOC Label example # Table of contents label
 last_modified_at: 2020-11-24
+author: Alex Giannotti
 header:
   overlay_image: "/assets/images/guidelines.jpg"
   overlay_filter: 0.5 # Can also be an RGB color

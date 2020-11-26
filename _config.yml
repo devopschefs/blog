@@ -15,7 +15,7 @@ remote_theme             : "mmistakes/minimal-mistakes@4.21.0"
 minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "default"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "en-UK"
 title                    : "DevOps Chefs"
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
@@ -91,14 +91,14 @@ analytics:
     anonymize_ip         : # true, false (default)
 
 
-# Site Author - Alex Giannotti
-author_alex:
-  name             : "Alex Giannotti"
-  avatar           : "/assets/images/alex.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Just a guy that likes to talk about tech."
-  location         : "UK"
-  email            :
-  links:
+# Site Default Author
+# author:
+#   name             : ""
+#   avatar           : "" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+#   bio              : ""
+#   location         : ""
+#   email            :
+#   links:
     #- label: "Email"
     #   icon: "fas fa-fw fa-envelope-square"
     #   url: "mailto:your.name@email.com"
@@ -111,42 +111,12 @@ author_alex:
     # - label: "Facebook"
     #   icon: "fab fa-fw fa-facebook-square"
     #   url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/alexgwasp2"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/alexgiannotti/"
-    #- label: "Instagram"
-    #  icon: "fab fa-fw fa-instagram"
-    #  url: "https://instagram.com/"
-
-# Site Author - Max Fernandes
-author_max:
-  name             : "Max Fernandes"
-  avatar           : "/assets/images/chef_hat.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "DevOps advocate."
-  location         : "BR"
-  email            :
-  links:
-    #- label: "Email"
-    #   icon: "fas fa-fw fa-envelope-square"
-    #   url: "mailto:your.name@email.com"
-    #- label: "Website"
-    #   icon: "fas fa-fw fa-link"
-    #   url: "https://your-website.com"
-    # - label: "Twitter"
-    #   icon: "fab fa-fw fa-twitter-square"
-    #   url: "https://twitter.com/"
-    # - label: "Facebook"
-    #   icon: "fab fa-fw fa-facebook-square"
-    #   url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/mistermaf"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/maxalvesfernandes/"
+    # - label: "GitHub"
+    #   icon: "fab fa-fw fa-github"
+    #   url: "https://github.com/"
+    # - label: "LinkedIn"
+    #   icon: "fab fa-fw fa-linkedin"
+    #   url: "https://www.linkedin.com/in/"
     #- label: "Instagram"
     #  icon: "fab fa-fw fa-instagram"
     #  url: "https://instagram.com/"
@@ -155,15 +125,18 @@ author_max:
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://facebook.com/"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://twitter.com/"
+    # - label: "Facebook"
+    #   icon: "fab fa-fw fa-facebook-square"
+    #   url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/devopschefs"
+    - label: "Azure DevOps"
+      icon: "fab fa-fw fa-microsoft"
+      url: "https://dev.azure.com/devopschefs/Demos"
     #- label: "GitLab"
       #icon: "fab fa-fw fa-gitlab"
       #url:
@@ -204,7 +177,7 @@ exclude:
   - package-lock.json
   - Rakefile
   - README
-  - howtocontribute.md
+  - howto*.md
   - _drafts
   - tmp
 keep_files:
@@ -244,7 +217,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: GMT # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/London # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)

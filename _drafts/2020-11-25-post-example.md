@@ -3,6 +3,7 @@ title: "Post Example"
 excerpt: "Excerpt post example." # ProTip: Remember to write unique excerpt descriptions for each post for improved SEO and archive listings.
 toc_label: TOC Label example # Table of contents label
 last_modified_at: 2020-11-24
+author: # Alex Giannotti | Max Fernandes
 header:
   overlay_image: "/assets/images/guidelines.jpg"
   overlay_filter: 0.5 # Can also be an RGB color

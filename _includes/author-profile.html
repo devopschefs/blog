@@ -1,29 +1,29 @@
-{% assign author_max = page.author_max | default: page.authors[0] | default: site.author_max %}
-{% assign author_max = site.data.authors[author_max] | default: author_max %}
+{% assign author = page.author | default: page.authors[0] | default: site.author %}
+{% assign author = site.data.authors[author] | default: author %}
 
 <div itemscope itemtype="https://schema.org/Person">
 
-  {% if author_max.avatar %}
+  {% if author.avatar %}
     <div class="author__avatar">
-      {% if author_max.home %}
-        <a href="{{ author_max.home | relative_url }}">
-          <img src="{{ author_max.avatar | relative_url }}" alt="{{ author_max.name }}" itemprop="image">
+      {% if author.home %}
+        <a href="{{ author.home | relative_url }}">
+          <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" itemprop="image">
         </a>
       {% else %}
-        <img src="{{ author_max.avatar | relative_url }}" alt="{{ author_max.name }}" itemprop="image">
+        <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" itemprop="image">
       {% endif %}
     </div>
   {% endif %}
 
   <div class="author__content">
-    {% if author_max.home %}
-      <a href="{{ author_max.home | relative_url }}"><h3 class="author__name" itemprop="name">{{ author_max.name }}</h3></a>
+    {% if author.home %}
+      <a href="{{ author.home | relative_url }}"><h3 class="author__name" itemprop="name">{{ author.name }}</h3></a>
     {% else %}
-      <h3 class="author__name" itemprop="name">{{ author_max.name }}</h3>
+      <h3 class="author__name" itemprop="name">{{ author.name }}</h3>
     {% endif %}
-    {% if author_max.bio %}
+    {% if author.bio %}
       <div class="author__bio" itemprop="description">
-        {{ author_max.bio | markdownify }}
+        {{ author.bio | markdownify }}
       </div>
     {% endif %}
   </div>
@@ -31,216 +31,216 @@
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button>
     <ul class="author__urls social-icons">
-      {% if author_max.location %}
+      {% if author.location %}
         <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">{{ author_max.location }}</span>
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">{{ author.location }}</span>
         </li>
       {% endif %}
 
-      {% if author_max.links %}
-        {% for link in author_max.links %}
+      {% if author.links %}
+        {% for link in author.links %}
           {% if link.label and link.url %}
             <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i><span class="label">{{ link.label }}</span></a></li>
           {% endif %}
         {% endfor %}
       {% endif %}
 
-      {% if author_max.uri %}
+      {% if author.uri %}
         <li>
-          <a href="{{ author_max.uri }}" itemprop="url">
+          <a href="{{ author.uri }}" itemprop="url">
             <i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</span>
           </a>
         </li>
       {% endif %}
 
-      {% if author_max.email %}
+      {% if author.email %}
         <li>
-          <a href="mailto:{{ author_max.email }}">
-            <meta itemprop="email" content="{{ author_max.email }}" />
+          <a href="mailto:{{ author.email }}">
+            <meta itemprop="email" content="{{ author.email }}" />
             <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</span>
           </a>
         </li>
       {% endif %}
 
-      {% if author_max.keybase %}
+      {% if author.keybase %}
         <li>
-          <a href="https://keybase.io/{{ author_max.keybase }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+          <a href="https://keybase.io/{{ author.keybase }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
             <i class="fas fa-fw fa-key" aria-hidden="true"></i><span class="label">Keybase</span>
           </a>
         </li>
       {% endif %}
 
-      {% if author_max.twitter %}
+      {% if author.twitter %}
         <li>
-          <a href="https://twitter.com/{{ author_max.twitter }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+          <a href="https://twitter.com/{{ author.twitter }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
             <i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span>
           </a>
         </li>
       {% endif %}
 
-      {% if author_max.facebook %}
+      {% if author.facebook %}
         <li>
-          <a href="https://www.facebook.com/{{ author_max.facebook }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+          <a href="https://www.facebook.com/{{ author.facebook }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
             <i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i><span class="label">Facebook</span>
           </a>
         </li>
       {% endif %}
 
-      {% if author_max.linkedin %}
+      {% if author.linkedin %}
         <li>
-          <a href="https://www.linkedin.com/in/{{ author_max.linkedin }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+          <a href="https://www.linkedin.com/in/{{ author.linkedin }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
             <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span>
           </a>
         </li>
       {% endif %}
 
-      {% if author_max.xing %}
+      {% if author.xing %}
         <li>
-          <a href="https://www.xing.com/profile/{{ author_max.xing }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+          <a href="https://www.xing.com/profile/{{ author.xing }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
             <i class="fab fa-fw fa-xing-square" aria-hidden="true"></i><span class="label">XING</span>
           </a>
         </li>
       {% endif %}
 
-      {% if author_max.instagram %}
+      {% if author.instagram %}
         <li>
-          <a href="https://instagram.com/{{ author_max.instagram }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+          <a href="https://instagram.com/{{ author.instagram }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
             <i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span>
           </a>
         </li>
       {% endif %}
 
-      {% if author_max.tumblr %}
+      {% if author.tumblr %}
         <li>
-          <a href="https://{{ author_max.tumblr }}.tumblr.com" itemprop="sameAs" rel="nofollow noopener noreferrer">
+          <a href="https://{{ author.tumblr }}.tumblr.com" itemprop="sameAs" rel="nofollow noopener noreferrer">
             <i class="fab fa-fw fa-tumblr-square" aria-hidden="true"></i><span class="label">Tumblr</span>
           </a>
         </li>
       {% endif %}
 
-      {% if author_max.bitbucket %}
+      {% if author.bitbucket %}
         <li>
-          <a href="https://bitbucket.org/{{ author_max.bitbucket }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+          <a href="https://bitbucket.org/{{ author.bitbucket }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
             <i class="fab fa-fw fa-bitbucket" aria-hidden="true"></i><span class="label">Bitbucket</span>
           </a>
         </li>
       {% endif %}
 
-      {% if author_max.github %}
+      {% if author.github %}
         <li>
-          <a href="https://github.com/{{ author_max.github }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+          <a href="https://github.com/{{ author.github }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
             <i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span>
           </a>
         </li>
       {% endif %}
 
-      {% if author_max.gitlab %}
+      {% if author.gitlab %}
         <li>
-          <a href="https://gitlab.com/{{ author_max.gitlab }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+          <a href="https://gitlab.com/{{ author.gitlab }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
             <i class="fab fa-fw fa-gitlab" aria-hidden="true"></i><span class="label">GitLab</span>
           </a>
         </li>
       {% endif %}
 
-      {% if author_max.stackoverflow %}
+      {% if author.stackoverflow %}
         <li>
-          <a href="https://stackoverflow.com/users/{{ author_max.stackoverflow }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+          <a href="https://stackoverflow.com/users/{{ author.stackoverflow }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
             <i class="fab fa-fw fa-stack-overflow" aria-hidden="true"></i><span class="label">Stack Overflow</span>
           </a>
         </li>
       {% endif %}
 
-      {% if author_max.lastfm %}
+      {% if author.lastfm %}
         <li>
-          <a href="https://last.fm/user/{{ author_max.lastfm }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+          <a href="https://last.fm/user/{{ author.lastfm }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
             <i class="fab fa-fw fa-lastfm-square" aria-hidden="true"></i><span class="label">Last.fm</span>
           </a>
         </li>
       {% endif %}
 
-      {% if author_max.dribbble %}
+      {% if author.dribbble %}
         <li>
-          <a href="https://dribbble.com/{{ author_max.dribbble }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+          <a href="https://dribbble.com/{{ author.dribbble }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
             <i class="fab fa-fw fa-dribbble" aria-hidden="true"></i><span class="label">Dribbble</span>
           </a>
         </li>
       {% endif %}
 
-      {% if author_max.pinterest %}
+      {% if author.pinterest %}
         <li>
-          <a href="https://www.pinterest.com/{{ author_max.pinterest }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+          <a href="https://www.pinterest.com/{{ author.pinterest }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
             <i class="fab fa-fw fa-pinterest" aria-hidden="true"></i><span class="label">Pinterest</span>
           </a>
         </li>
       {% endif %}
 
-      {% if author_max.foursquare %}
+      {% if author.foursquare %}
         <li>
-          <a href="https://foursquare.com/{{ author_max.foursquare }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+          <a href="https://foursquare.com/{{ author.foursquare }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
             <i class="fab fa-fw fa-foursquare" aria-hidden="true"></i><span class="label">Foursquare</span>
           </a>
         </li>
       {% endif %}
 
-      {% if author_max.steam %}
+      {% if author.steam %}
         <li>
-          <a href="https://steamcommunity.com/id/{{ author_max.steam }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+          <a href="https://steamcommunity.com/id/{{ author.steam }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
             <i class="fab fa-fw fa-steam" aria-hidden="true"></i><span class="label">Steam</span>
           </a>
         </li>
       {% endif %}
 
-      {% if author_max.youtube %}
-        {% if author_max.youtube contains "://" %}
+      {% if author.youtube %}
+        {% if author.youtube contains "://" %}
           <li>
-            <a href="{{ author_max.youtube }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <a href="{{ author.youtube }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
               <i class="fab fa-fw fa-youtube" aria-hidden="true"></i><span class="label">YouTube</span>
             </a>
           </li>
-        {% elsif author_max.youtube %}
+        {% elsif author.youtube %}
           <li>
-            <a href="https://www.youtube.com/user/{{ author_max.youtube }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <a href="https://www.youtube.com/user/{{ author.youtube }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
               <i class="fab fa-fw fa-youtube" aria-hidden="true"></i><span class="label">YouTube</span>
             </a>
           </li>
         {% endif %}
       {% endif %}
 
-      {% if author_max.soundcloud %}
+      {% if author.soundcloud %}
         <li>
-          <a href="https://soundcloud.com/{{ author_max.soundcloud }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+          <a href="https://soundcloud.com/{{ author.soundcloud }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
             <i class="fab fa-fw fa-soundcloud" aria-hidden="true"></i><span class="label">SoundCloud</span>
           </a>
         </li>
       {% endif %}
 
-      {% if author_max.weibo %}
+      {% if author.weibo %}
         <li>
-          <a href="https://www.weibo.com/{{ author_max.weibo }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+          <a href="https://www.weibo.com/{{ author.weibo }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
             <i class="fab fa-fw fa-weibo" aria-hidden="true"></i><span class="label">Weibo</span>
           </a>
         </li>
       {% endif %}
 
-      {% if author_max.flickr %}
+      {% if author.flickr %}
         <li>
-          <a href="https://www.flickr.com/{{ author_max.flickr }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+          <a href="https://www.flickr.com/{{ author.flickr }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
             <i class="fab fa-fw fa-flickr" aria-hidden="true"></i><span class="label">Flickr</span>
           </a>
         </li>
       {% endif %}
 
-      {% if author_max.codepen %}
+      {% if author.codepen %}
         <li>
-          <a href="https://codepen.io/{{ author_max.codepen }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+          <a href="https://codepen.io/{{ author.codepen }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
             <i class="fab fa-fw fa-codepen" aria-hidden="true"></i><span class="label">CodePen</span>
           </a>
         </li>
       {% endif %}
 
-      {% if author_max.vine %}
+      {% if author.vine %}
         <li>
-          <a href="https://vine.co/u/{{ author_max.vine }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+          <a href="https://vine.co/u/{{ author.vine }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
             <i class="fab fa-fw fa-vine" aria-hidden="true"></i><span class="label">{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</span>
           </a>
         </li>
