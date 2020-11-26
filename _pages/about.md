@@ -3,9 +3,11 @@ permalink: /about/
 title: "About"
 #excerpt: "About us."
 last_modified_at: 2020-11-24
+author_profile: true
 header:
   overlay_image: "/assets/images/about.jpg"
   overlay_filter: 0.50
+
 ---
 
 This is our personal blog, where we like to talk about our career and technologies we are passionate about.

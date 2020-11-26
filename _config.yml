@@ -358,7 +358,7 @@ defaults:
       type: cloud
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       share: true
       comments: false
   # _devops
@@ -367,7 +367,7 @@ defaults:
       type: devops
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       share: true
       comments: false
   # _iac
@@ -376,6 +376,6 @@ defaults:
       type: iac
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       share: true
       comments: false
