@@ -35,7 +35,7 @@ Alex Giannotti:
 
 Max Fernandes:
   name             : "Max Fernandes"
-  avatar           : "/assets/images/chef_hat.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/max.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "DevOps advocate."
   #location         : "BR"
   #email            :
