@@ -179,6 +179,7 @@ footer:
 include:
   - .htaccess
   - _pages
+  - _posts
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -314,7 +315,7 @@ compress_html:
 
 # Defaults
 defaults:
-  # _posts
+  # _posts (NEEDS TO BE THE SAME AS COLLECTIONS)
   - scope:
       path: ""
       type: posts
@@ -345,6 +346,7 @@ defaults:
       type: tag
     values:
       comments: false
+      author_profile: false
   # _categories
   - scope:
       path: ""
@@ -352,7 +354,7 @@ defaults:
     values:
       comments: false
       author_profile: false
-# COLLECTIONS
+# COLLECTIONS (NEEDS TO BE THE SAME AS POSTS)
   # _cloud
   - scope:
       path: ""
@@ -360,8 +362,13 @@ defaults:
     values:
       layout: single
       author_profile: true
+      read_time: true
+      comments: true
       share: true
-      comments: false
+      related: true
+      show_date: true
+      toc: true # Table of contents (https://mmistakes.github.io/minimal-mistakes/docs/layouts/#table-of-contents)
+      toc_icon: bookmark # Free icons (https://fontawesome.com/icons?d=gallery&s=solid&m=free)
   # _devops
   - scope:
       path: ""
@@ -369,8 +376,13 @@ defaults:
     values:
       layout: single
       author_profile: true
+      read_time: true
+      comments: true
       share: true
-      comments: false
+      related: true
+      show_date: true
+      toc: true # Table of contents (https://mmistakes.github.io/minimal-mistakes/docs/layouts/#table-of-contents)
+      toc_icon: bookmark # Free icons (https://fontawesome.com/icons?d=gallery&s=solid&m=free)
   # _iac
   - scope:
       path: ""
@@ -378,5 +390,10 @@ defaults:
     values:
       layout: single
       author_profile: true
+      read_time: true
+      comments: true
       share: true
-      comments: false
+      related: true
+      show_date: true
+      toc: true # Table of contents (https://mmistakes.github.io/minimal-mistakes/docs/layouts/#table-of-contents)
+      toc_icon: bookmark # Free icons (https://fontawesome.com/icons?d=gallery&s=solid&m=free)
