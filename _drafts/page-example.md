@@ -1,7 +1,7 @@
 ---
 permalink: /comment-policy/ # folder path
 title: Comment Policy # name on UI
-#excerpt: "Comment policy."
+#excerpt: "Excerpt example." # Best if pages don't have it
 last_modified_at: 2020-11-24
 header:
   overlay_image: "/assets/images/<image_name>"

@@ -7,12 +7,12 @@ author: # Alex Giannotti | Max Fernandes
 header:
   overlay_image: "/assets/images/guidelines.jpg"
   overlay_filter: 0.5 # Can also be an RGB color
-show_overlay_excerpt: true
+show_overlay_excerpt: true # Show excerpt over main image
 categories:
   - processos
   - azure
   - modelo
-tags:
+tags: # same as categories
   - processos
   - azure
   - modelo
