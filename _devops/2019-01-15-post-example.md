@@ -9,9 +9,13 @@ header:
   overlay_filter: 0.5 # Can also be an RGB color
 show_overlay_excerpt: true
 categories:
-  - devops
+  - processos
+  - azure
+  - modelo
 tags:
-  - tags-example
+  - processos
+  - azure
+  - modelo
 
 # OPTIONALS
 # caption: "Photo credit: [**Unsplash**](https://unsplash.com)" # Header image credits
