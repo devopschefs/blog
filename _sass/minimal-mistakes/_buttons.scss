@@ -37,10 +37,12 @@
   (warning, $warning-color),
   (danger, $danger-color),
   (info, $info-color),
+  /* social media buttons*/
+  (email, $email-color),
   (facebook, $facebook-color),
-  (twitter, $twitter-color),
   (linkedin, $linkedin-color),
   (reddit, $reddit-color),
+  (twitter, $twitter-color),
   (whatsapp, $whatsapp-color);
 
   @each $buttoncolor, $color in $buttoncolors {

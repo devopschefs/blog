@@ -7,15 +7,18 @@
   <!-- LINKEDIN -->
   <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url | url_encode }}" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} LinkedIn"><i class="fab fa-fw fa-linkedin-in" aria-hidden="true"></i><span><!-- Button name --></span></a>
 
+  <!-- EMAIL -->
+  <a href="mailto:?subject=New Post From DevOps Chefs&amp;body=Check this out {{ page.url | absolute_url | url_encode }}&title={{ page.title }}" class="btn btn--email" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Email"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i><span><!-- Button name --></span></a>
+
   <!-- TWITTER -->
   <a href="https://twitter.com/intent/tweet?{% if site.twitter.username %}via={{ site.twitter.username | url_encode }}&{% endif %}text={{ page.title | url_encode }}%20{{ page.url | absolute_url | url_encode }}" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Twitter" ><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span><!-- Button name --></span></a>
 
-  <!-- FACEBOOK -->
-  <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | url_encode }}" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Facebook"><i class="fab fa-fw fa-facebook-f" aria-hidden="true"></i><span><!-- Button name --></span></a>
-
   <!-- WHATSAPP -->
   <a href="https://api.whatsapp.com/send?text={{ page.url | absolute_url | url_encode }}" class="btn btn--whatsapp" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} WhatsApp"><i class="fab fa-fw fa-whatsapp" aria-hidden="true"></i><span><!-- Button name --></span></a>
+
+  <!-- FACEBOOK -->
+  <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | url_encode }}" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Facebook"><i class="fab fa-fw fa-facebook-f" aria-hidden="true"></i><span><!-- Button name --></span></a>
   
   <!-- REDDIT -->
-  <a href="https://www.reddit.com/submit?url={{ page.url | absolute_url | url_encode }}&title={{ page.title }}" class="btn btn--reddit" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Reddit"><i class="fab fa-fw fa-reddit-alien" aria-hidden="true"></i><span><!-- Button name --></span></a>
+  <a href="https://www.reddit.com/submit?url={{ page.url | absolute_url | url_encode }}&title={{ page.title }}" class="btn btn--reddit" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Reddit"><i class="fab fa-fw fa-reddit-alien" aria-hidden="true"></i><span><!-- Button name --></span></a>  
 </section>
