@@ -1,4 +1,4 @@
-# [Cloud Brops](https://cloudbrops.github.io/blog/)
+# ![favicon](favicon.ico) [DevOps Chefs](https://devopschefs.github.io/blog/)
 
 This is our personal blog, where we like to talk about our career and technologies we are passionate about.
 
