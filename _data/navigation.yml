@@ -2,12 +2,12 @@
 main:
   # - title: "Categories"
   #   url: /categories/
-  - title: "Cloud"
-    url: /cloud/
-  - title: "DevOps"
-    url: /devops/
-  - title: "IaC"
-    url: /iac/
+  #- title: "Cloud"
+  #  url: /cloud/
+  #- title: "DevOps"
+  #  url: /devops/
+  #- title: "IaC"
+  #  url: /iac/
   - title: "About"
     url: /about/
   - title: "Terms &amp; Policies"
