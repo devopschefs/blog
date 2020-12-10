@@ -9,10 +9,10 @@
   Choose one of the following by uncommenting it:
 -->
 
-<!-- This is a new post. -->
-<!-- This is a bug fix. -->
-<!-- This is an enhancement or feature. -->
-<!-- This is a documentation change. -->
+<!-- # **This is a new post** -->
+<!-- # **This is a bug fix** -->
+<!-- # **This is an enhancement or feature** -->
+<!-- # **This is a documentation change** -->
 
 ## Summary
 
@@ -23,5 +23,6 @@
 ## Context
 
 <!--
+  Delete this section in case of a new post.
   Is this related to any GitHub issue(s)?
 -->
