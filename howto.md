@@ -1,6 +1,6 @@
 # INSTALLATION
 
-Cloned from [hemangsk/Gravity](http://github.com/hemangsk/Gravity/).
+Cloned from [mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes).
 
 ***
 
@@ -8,10 +8,10 @@ Cloned from [hemangsk/Gravity](http://github.com/hemangsk/Gravity/).
 
 Intall Ruby and Gem:
 
-- [Ruby](https://www.ruby-lang.org/en/downloads/) version 2.5.0 or higher, including all development headers (check your Ruby version using ```ruby -v```).
-- [RubyGems](https://rubygems.org/pages/download) (check your Gems version using ```gem -v```).
+- [Ruby](https://www.ruby-lang.org/en/downloads/) version 2.5.0 or higher, including all development headers (check your Ruby version using `ruby -v`).
+- [RubyGems](https://rubygems.org/pages/download) (check your Gems version using `gem -v`).
 
-Gravity uses Jekyll and it's built-in SCSS compiler for the associated CSS, so the first thing you'll need is Jekyll itself:
+We use Jekyll and it's built-in SCSS compiler for the associated CSS, so the first thing you'll need is Jekyll itself, so follow these steps:
 
 ```bash
 gem install jekyll bundler # This is going to install Jekyll and Bundler
@@ -30,19 +30,15 @@ gem install eventmachine --platform ruby
 
 ## USAGE
 
-Once you have the required gems, you can go ahead and clone the
-[Gravity repository](https://github.com/hemangsk/Gravity) or [download](https://github.com/hemangsk/Gravity/archive/master.zip)
-a zip of the master branch.
+Once you have the required gems from [dependencies](#dependencies), you can go ahead and clone [our repository](https://github.com/devopschefs/blog).
 
-Run :
+To run the website locally:
 
 ```bash
 bundle exec jekyll serve --livereload
 ```
 
-Jekyll should now be generating your content!
-
-If you need more help see the Jekyll page [here](https://jekyllrb.com/docs/).
+Jekyll should now be generating our content! If you need more help see the Jekyll page [here](https://jekyllrb.com/docs/).
 
 ***
 
@@ -55,17 +51,24 @@ If you need more help see the Jekyll page [here](https://jekyllrb.com/docs/).
 
 ```markdown
 ---
-title: "Post Example"
-excerpt: "Excerpt post example."
-toc_label: TOC Label example # Table of contents label
+title: "Post Example" # name on UI
+excerpt: "Excerpt post example" # Unique excerpt descriptions for each post for improved SEO and archive listings.
+toc: true # Table of contents (https://mmistakes.github.io/minimal-mistakes/docs/layouts/#table-of-contents) - Can be "false" if you don't need one
+toc_label: Content # Keep, for consistency across posts
+last_modified_at: 2020-11-24
+author: # Alex Giannotti | Max Fernandes
 header:
-  overlay_image: "/assets/images/<image_name>"
+  overlay_image: "/assets/images/posts_header/examplepost.jpg"
   overlay_filter: 0.5 # Can also be an RGB color
-show_overlay_excerpt: true
+show_overlay_excerpt: true # Show excerpt over main image
 categories:
-  - categories-example
-tags:
-  - tags-example
+  - processos
+  - azure
+  - modelo
+tags: # same as categories
+  - processos
+  - azure
+  - modelo
 
 # OPTIONALS
 # caption: "Photo credit: [**Unsplash**](https://unsplash.com)" # Header image credits
@@ -77,6 +80,22 @@ tags:
 
 ***
 
+## IMAGES
+
+To place new images in the repository, please mind the folders bellow.
+
+```markdown
+├── assets                        # => Main folder for the projects assets
+│   └── images                    # => Folder to hold all images used in **PAGES**
+|       └── authors               # => Only for author's pictures
+│       └── favicon               # => For the project's icons
+│       └── other_images          # => All images that aren't being used in the project, but are worth saving
+│       └── posts_header          # => All images used in **POSTS** headers
+│       └── posts_images          # => All images used in **POSTS** bodies
+```
+
+***
+
 ## CREATE PAGES
 
 - Create a `<example>.md` file in the `/docs/_pages` directory.
@@ -84,20 +103,45 @@ tags:
 
 ```markdown
 ---
-permalink: /comment-policy/
-title: Comment Policy
-#excerpt: "Comment policy."
+permalink: /comment-policy/ # folder path
+title: Comment Policy # name on UI
+#excerpt: "Excerpt example." # Best if pages don't have it
 last_modified_at: 2020-11-24
 header:
   overlay_image: "/assets/images/<image_name>"
   overlay_filter: 0.50
----
 
+---
 ```
 
 - Pages should always have (added as global settings in `_config.yml`):
   - `sitemap: true` so they can be searched at the sitemap feature.
   - `classes: wide` so they fill the whole page without a content sidebar.
+
+***
+
+## ARCHIVE PAGES
+
+You can display a list of all the posts corresponding to a particular category on a standalone page using the `ARCHIVE` layout.
+
+- Create a .md file in the `_pages` directory.
+- Name the file with the category name.
+    `\_pages\devops.md`
+- Write the *Front Matter* and content in the file.
+
+### FORMAT
+
+```markdown
+---
+permalink: /devops/
+title: "DevOps"
+layout: collection
+collection: devops
+entries_layout: grid
+classes: wide
+
+---
+```
 
 ***
 
@@ -112,71 +156,4 @@ To create your contact badge from LinkedIn follow these steps:
 - Copy the code in step one and paste it in the HTML about page.
 - Choose a badge, copy that code and paste it below the first line of code.
 
-## ARCHIVE PAGES
-
-**You can display a list of all the posts corresponding to a particular category on a standalone page using the `ARCHIVE` layout**
-
-- Create a .md file in the root directory.
-- Name the file. Preferred name will be the name of the category.
-    \*`life.md`
-- Write the *Front Matter* and content in the file.
-
-### FORMAT
-
-```markdown
----
-layout: archive ARCHIVE PAGE LAYOUT
-title: String TITLE OF THE WEBPAGE
-permalink: / String / PERMALINK FOR THE WEBPAGE
-tagline: String TAGLINE FOR THE PAGE
-category: String NAME OF THE CATEGORY OF WHICH THE PAGE WILL SHOW POSTS
----
-
----
-layout: archive
-title: "Design"
-permalink: "Design"
-tagline: "It's all about perception"
-category: "design"
----
-```
-
 ***
-
-## DIRECTORY STRUCTURE
-
-```markdown
-├── css                                         # => Output of the combined SASS files
-│   └── style.scss
-├── _includes                                   # => Contains partials that can be used with your layouts
-│   ├── footer.html
-│   ├── header.html
-│   ├── head.html
-│   ├── icon-github.html
-│   ├── icon-github.svg
-│   ├── icon-twitter.html
-│   └── icon-twitter.svg
-├── _layouts                                    # => Layout related HTML files
-│   ├── archive.html
-│   ├── default.html
-│   ├── page.html
-│   └── post.html
-├── _posts                                      # => posts, dynamic content. Follow the format: YEAR-MONTH-DAY-title.MARKUP
-│   ├── 2016-03-30-design-stories.markdown
-│   ├── 2016-03-30-science0.markdown
-│   ├── 2016-03-30-science.markdown
-│   └── 2016-03-30-welcome-to-jekyll.markdown
-└── _sass                                       # => SASS partials for styling
-|   ├── _base.scss
-|   ├── _layout.scss
-|   └── _syntax-highlighting.scss
-├── about.md
-├── _config.yml                                 # => Configuration options or flags for your site go here
-├── design.md
-├── download.md
-├── feed.xml
-├── index.html
-├── LICENSE.txt                                 # => Licensing information
-├── README.md
-└── science.md
-```
