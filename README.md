@@ -45,4 +45,4 @@ We are passionate about technology and we want to share what we know with you. O
 
 ## Contributing
 
-To contribute read [here](howtocontribute.md).
+To contribute read [here](howto.md).

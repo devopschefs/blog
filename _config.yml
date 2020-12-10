@@ -27,7 +27,7 @@ repository               : "devopschefs/blog" # GitHub username/repo-name e.g. "
 teaser                   : "/assets/images/chef_hat.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/chef_hat.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs              : true # true, false (default) # gives us permalinks on navigation
+breadcrumbs              : false # true, false (default) # gives us permalinks on navigation
 words_per_minute         : 200 # gives us an estimated time to read the post
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
@@ -134,9 +134,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/devopschefs"
-    - label: "Azure DevOps"
-      icon: "fab fa-fw fa-microsoft"
-      url: "https://dev.azure.com/devopschefs/Demos"
+    #- label: "Azure DevOps"
+    #  icon: "fab fa-fw fa-microsoft"
+    #  url: "https://dev.azure.com/devopschefs/Demos"
     #- label: "GitLab"
       #icon: "fab fa-fw fa-gitlab"
       #url:
@@ -153,6 +153,7 @@ include:
   - .htaccess
   - _pages
   - _posts
+  - assets/images/**
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -276,6 +277,9 @@ collections:
   iac:
     output: true
     permalink: /:collection/:path/
+  more:
+    output: true
+    permalink: /:collection/:path/
 
 
 # HTML Compression
@@ -341,7 +345,6 @@ defaults:
       share: true
       related: true
       show_date: true
-      toc: true # Table of contents (https://mmistakes.github.io/minimal-mistakes/docs/layouts/#table-of-contents)
       toc_icon: bookmark # Free icons (https://fontawesome.com/icons?d=gallery&s=solid&m=free)
   # _devops
   - scope:
@@ -355,7 +358,6 @@ defaults:
       share: true
       related: true
       show_date: true
-      toc: true # Table of contents (https://mmistakes.github.io/minimal-mistakes/docs/layouts/#table-of-contents)
       toc_icon: bookmark # Free icons (https://fontawesome.com/icons?d=gallery&s=solid&m=free)
   # _iac
   - scope:
@@ -369,5 +371,17 @@ defaults:
       share: true
       related: true
       show_date: true
-      toc: true # Table of contents (https://mmistakes.github.io/minimal-mistakes/docs/layouts/#table-of-contents)
+      toc_icon: bookmark # Free icons (https://fontawesome.com/icons?d=gallery&s=solid&m=free)
+  # _more
+  - scope:
+      path: ""
+      type: more
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      show_date: true
       toc_icon: bookmark # Free icons (https://fontawesome.com/icons?d=gallery&s=solid&m=free)

@@ -1,13 +1,17 @@
 # main links
 main:
-  - title: "Categories"
-    url: /categories/
-  - title: "Cloud"
-    url: /cloud/
-  - title: "DevOps"
-    url: /devops/
-  - title: "IaC"
-    url: /iac/
+  # - title: "Cloud"
+  #   url: /cloud/
+  # - title: "DevOps"
+  #   url: /devops/
+  # - title: "IaC"
+  #   url: /iac/
+  # - title: "More"
+  #   url: /more/
+  # - title: "Categories"
+  #   url: /categories/
+  # - title: "Posts by Year"
+  #   url: /year/
   - title: "About"
     url: /about/
   - title: "Terms &amp; Policies"
