@@ -134,9 +134,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/devopschefs"
-    - label: "Azure DevOps"
-      icon: "fab fa-fw fa-microsoft"
-      url: "https://dev.azure.com/devopschefs/Demos"
+    #- label: "Azure DevOps"
+    #  icon: "fab fa-fw fa-microsoft"
+    #  url: "https://dev.azure.com/devopschefs/Demos"
     #- label: "GitLab"
       #icon: "fab fa-fw fa-gitlab"
       #url:
@@ -341,7 +341,6 @@ defaults:
       share: true
       related: true
       show_date: true
-      toc: true # Table of contents (https://mmistakes.github.io/minimal-mistakes/docs/layouts/#table-of-contents)
       toc_icon: bookmark # Free icons (https://fontawesome.com/icons?d=gallery&s=solid&m=free)
   # _devops
   - scope:
@@ -355,7 +354,6 @@ defaults:
       share: true
       related: true
       show_date: true
-      toc: true # Table of contents (https://mmistakes.github.io/minimal-mistakes/docs/layouts/#table-of-contents)
       toc_icon: bookmark # Free icons (https://fontawesome.com/icons?d=gallery&s=solid&m=free)
   # _iac
   - scope:
@@ -369,5 +367,4 @@ defaults:
       share: true
       related: true
       show_date: true
-      toc: true # Table of contents (https://mmistakes.github.io/minimal-mistakes/docs/layouts/#table-of-contents)
       toc_icon: bookmark # Free icons (https://fontawesome.com/icons?d=gallery&s=solid&m=free)
