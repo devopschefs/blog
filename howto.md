@@ -54,18 +54,18 @@ Jekyll should now be generating our content! If you need more help see the Jekyl
 title: "Post Example" # name on UI
 excerpt: "Excerpt post example" # Unique excerpt descriptions for each post for improved SEO and archive listings.
 toc: true # Table of contents (https://mmistakes.github.io/minimal-mistakes/docs/layouts/#table-of-contents) - Can be "false" if you don't need one
-toc_label: Content # Keep, for consistency across posts
+toc_sticky: true # To enable the TOC to go down as you read the post - If "toc: false" you don't need this
+toc_label: Content # Keep, for consistency across posts - If "toc: false" you don't need this
 last_modified_at: 2020-11-24
 author: # Alex Giannotti | Max Fernandes
 header:
   overlay_image: "/assets/images/posts_header/examplepost.jpg"
   overlay_filter: 0.5 # Can also be an RGB color
+  teaser:  "/assets/images/posts_header/examplepost.jpg" # Image for tumbnail - Should be the same as the "overlay_image"
 show_overlay_excerpt: true # Show excerpt over main image
 categories:
-  - processos
-  - azure
-  - modelo
-tags: # same as categories
+  - example # devops | cloud | iac | more # Choose only one category
+tags: # subjects your post covers beyond the categories
   - processos
   - azure
   - modelo
