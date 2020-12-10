@@ -9,6 +9,7 @@
   Choose one of the following by uncommenting it:
 -->
 
+<!-- This is a new post. -->
 <!-- This is a bug fix. -->
 <!-- This is an enhancement or feature. -->
 <!-- This is a documentation change. -->
@@ -16,7 +17,7 @@
 ## Summary
 
 <!--
-  Provide a description of what your pull request changes.
+  Provide a description of what your pull request changes are about.
 -->
 
 ## Context
