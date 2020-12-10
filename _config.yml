@@ -153,6 +153,7 @@ include:
   - .htaccess
   - _pages
   - _posts
+  - assets/images/**
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -276,6 +277,9 @@ collections:
   iac:
     output: true
     permalink: /:collection/:path/
+  more:
+    output: true
+    permalink: /:collection/:path/
 
 
 # HTML Compression
@@ -359,6 +363,19 @@ defaults:
   - scope:
       path: ""
       type: iac
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      show_date: true
+      toc_icon: bookmark # Free icons (https://fontawesome.com/icons?d=gallery&s=solid&m=free)
+  # _more
+  - scope:
+      path: ""
+      type: more
     values:
       layout: single
       author_profile: true

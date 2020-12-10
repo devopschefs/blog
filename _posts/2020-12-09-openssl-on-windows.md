@@ -14,7 +14,6 @@ categories:
 tags:
   - windows
   - openssl
-
 ---
 
 Today I came across a project that I needed to do somethings using [OpenSSL](https://www.openssl.org/) and as a Windows 10 user I wondered how I would install it on my computer or even how to use it.
