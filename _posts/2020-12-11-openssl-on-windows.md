@@ -5,9 +5,9 @@ toc: false
 last_modified_at: 2020-12-09
 author: Alex Giannotti
 header:
-  overlay_image: "/assets/images/posts_header/opensslonwindows.jpg"
+  overlay_image: "/assets/images/posts_header/openssl_on_windows.jpg"
   overlay_filter: 0.5
-  teaser: "/assets/images/posts_header/opensslonwindows.jpg"
+  teaser: "/assets/images/posts_header/openssl_on_windows.jpg"
 show_overlay_excerpt: true
 categories:
   - more
