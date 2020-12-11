@@ -32,7 +32,7 @@ Here you will find various classes about Microsoft products, including Azure and
 
 ***
 
-If you want to know more, see our second post about studing Microsoft Azure [here]({{ site.url }}{{ site.baseurl }}/cloud/azure-study-guide-part2).
+If you want to know more, see our second post about studing Microsoft Azure [here]({{ site.url }}/cloud/azure-study-guide-part2).
 
 Hope you liked this post and that we helped you. Thanks for visiting us!
 
