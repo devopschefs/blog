@@ -1,9 +1,20 @@
 ---
-layout: post
-title:  "Azure resource manager service endpoint no VSTS"
-date:   2017-04-26 08:00:00 +0530
-categories: cloud
-author: "Alex Giannotti"
+title: "Azure Resource Manager"
+excerpt: "Azure Resource Manager endpoint on Azure DevOps"
+toc: true
+toc_sticky: true
+toc_label: Content
+last_modified_at: 2020-09-18
+author: Alex Giannotti
+header:
+  overlay_image: "/assets/images/posts_header/example_post.jpg"
+  overlay_filter: 0.5
+  teaser:  "/assets/images/posts_header/example_post.jpg"
+show_overlay_excerpt: true
+categories:
+  - cloud
+tags:
+  - arm
 ---
 
 Oi Pessoas!

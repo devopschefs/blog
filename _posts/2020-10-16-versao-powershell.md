@@ -1,19 +1,31 @@
 ---
-layout: post
-title:  "Você sabe qual a sua versão do PowerShell?"
-date:   2017-03-22 08:00:00 +0530
-categories: more
-author: "Alex Giannotti"
+title: "PowerShell Version"
+excerpt: "How to discover you PowerShell version"
+toc: true
+toc_sticky: true
+toc_label: Content
+last_modified_at: 2020-10-16
+author: Alex Giannotti
+header:
+  overlay_image: "/assets/images/posts_header/example_post.jpg"
+  overlay_filter: 0.5
+  teaser:  "/assets/images/posts_header/example_post.jpg"
+show_overlay_excerpt: true
+categories:
+  - more
+tags:
+  - powershell
+  - version
 ---
 
-Oi Pessoas!
+Did you ever got into a situation where you didn't know yours or a remote computer's PowerShell version? If that's so, 
 
 Vocês já se depararam querendo saber a versão do Poweshell no seu servidor e não conseguindo dar um simples “powershell –version” para saber? Pois eu sim! Outro dia em um cliente, eu reparei que a versão do Powershell no meu PC tinha mais comandos que o instalado em meu servidor de build, e para a minha surpresa o comando acima não funcionou… Pois bem, quais são as versões do Powershell… você sabe qual é a sua?
 
 Versões do Powershell
 O Powershell tem 5 versões, ao longo dos anos ele foi evoluindo junto com os sistemas operacionais da Microsoft e desde a versão 2.0 podemos ver uma importantíssima ferramenta para os SIS Admins automatizarem uma série de atividades do dia a dia.
 
-Para saber mais da história, diferenças entre as versões e evolução da ferramenta, clique aqui.
+Para saber mais da história, diferenças entre as versões e evolução da ferramenta, clique [here](https://docs.microsoft.com/en-us/powershell/?view=powershell-7.1).
 
 Mas… você sabe qual é a sua?
 Bom, de forma rápida e prática posso listar abaixo os sistemas operacionais e quais as versões que vem com eles.

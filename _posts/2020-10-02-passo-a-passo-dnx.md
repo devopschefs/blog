@@ -1,9 +1,20 @@
 ---
-layout: post
-title:  "Passo a passo para instalar o DNX"
-date:   2017-02-11 08:00:00 +0530
-categories: more
-author: "Alex Giannotti"
+title: "DNX Instalation"
+excerpt: "How to install a DNX"
+toc: true
+toc_sticky: true
+toc_label: Content
+last_modified_at: 2020-10-02
+author: Alex Giannotti
+header:
+  overlay_image: "/assets/images/posts_header/example_post.jpg"
+  overlay_filter: 0.5
+  teaser:  "/assets/images/posts_header/example_post.jpg"
+show_overlay_excerpt: true
+categories:
+  - more
+tags:
+  - dnx
 ---
 
 Oi Pessoas!!!

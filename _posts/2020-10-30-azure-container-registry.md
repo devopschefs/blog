@@ -1,12 +1,25 @@
 ---
-layout: post
-title:  "Azure container registry"
-date:   2017-10-04 08:00:00 +0530
-categories: cloud
-author: "Alex Giannotti"
+title: "Azure Container Registry"
+excerpt: "How to use ACR"
+toc: true
+toc_sticky: true
+toc_label: Content
+last_modified_at: 2020-10-30
+author: Alex Giannotti
+header:
+  overlay_image: "/assets/images/posts_header/azure_container_registry.jpg"
+  overlay_filter: 0.5
+  teaser:  "/assets/images/posts_header/azure_container_registry.jpg"
+show_overlay_excerpt: true
+categories:
+  - cloud
+tags:
+  - azure
+  - docker
+  - container
+  - registry
 ---
 
-Oi Pessoas!
 
 Hoje vou explicar para vocês como funciona e para que serve o Azure Container Registry. Bom, um container registry serve para você poder guardar e gerenciar as suas imagens dos containers docker em um lugar privado, neste caso no Azure.
 
