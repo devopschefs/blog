@@ -7,9 +7,9 @@ toc_label: Content # Keep, for consistency across posts - If "toc: false" you do
 last_modified_at: 2020-11-24
 author: # Alex Giannotti | Max Fernandes
 header:
-  overlay_image: "/assets/images/posts_header/examplepost.jpg"
+  overlay_image: "/assets/images/posts_header/example_post.jpg"
   overlay_filter: 0.5 # Can also be an RGB color
-  teaser:  "/assets/images/posts_header/examplepost.jpg" # Image for tumbnail - Should be the same as the "overlay_image"
+  teaser:  "/assets/images/posts_header/example_post.jpg" # Image for tumbnail - Should be the same as the "overlay_image"
 show_overlay_excerpt: true # Show excerpt over main image
 categories:
   - example # devops | cloud | iac | more # Choose only one category
