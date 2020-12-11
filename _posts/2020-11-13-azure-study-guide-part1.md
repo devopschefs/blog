@@ -15,7 +15,7 @@ categories:
   - cloud
 tags:
   - azure
-  - guides
+  - learning
 ---
 
 This week I was looking for sites to study Microsoft Azure, and a friend sent me a very helpfull link, so I'm using it to broaden my knowledge about this awesome tool. On my search I found lots of sites, but I'm sharing only official ones that I found really helpfull. Enjoy!

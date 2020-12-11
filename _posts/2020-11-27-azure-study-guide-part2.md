@@ -15,7 +15,7 @@ categories:
   - cloud
 tags:
   - azure
-  - guides
+  - learning
 ---
 
 Continuing our tips about where to find good sources to study Microsoft Azure, which started [here]({{ site.url }}cloud/azure-study-guide-part1). Yesterday I was looking at some certifications and I found some usefull stuff.
