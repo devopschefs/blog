@@ -8,10 +8,10 @@ main:
   #   url: /iac/
   # - title: "More"
   #   url: /more/
-  # - title: "Categories"
-  #   url: /categories/
-  # - title: "Posts by Year"
-  #   url: /year/
+  - title: "Categories"
+    url: /categories/
+  - title: "Posts by Year"
+    url: /year/
   - title: "About"
     url: /about/
   - title: "Terms &amp; Policies"
